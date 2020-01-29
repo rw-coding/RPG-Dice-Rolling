@@ -7,45 +7,48 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
 
-        <title>RPG Dice-Roller</title>
+        <title>RPG Dice-Rolling</title>
     </head>
 
     <body>
-        <div class="container col-12 no-margin bg-dark row">
-            <div class="col-5 bg-primary no-padding row">
-                <div class="col-12 bg-secondary">
+        <div class="container col-12 no-margin no-padding bg-dark row">
+            <div class="col-5 no-padding">
+                <div id="logoBox" class="col-12 bg-secondary">
                     <img id="diceRoller" src="images/RPGDiceRolling.png" alt="RPG Dice-Rolling" class="col-12 align-self-center">
                 </div>
                 <div class="col row">
                     <div class="col no-padding">
-                        <button id="d4button" type="button" class="btn no-round-left col-11 border border-dark" onclick="d4change()">
-                            d4
+                        <button id="d4button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d4change()">
+                            <h5 class="no-margin col-3 text-left">d4</h5>
                         </button>
-                        <button id="d6button" type="button" class="btn no-round-left col-11 border border-dark" onclick="d6change()">
-                            d6
+                        <button id="d6button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d6change()">
+                            <h5 class="no-margin col-3 text-left">d6</h5>
                         </button>
-                        <button id="d8button" type="button" class="btn no-round-left col-11 border border-dark" onclick="d8change()">
-                            d8
+                        <button id="d8button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d8change()">
+                            <h5 class="no-margin col-3 text-left">d8</h5>
                         </button>
-                        <button id="d10button" type="button" class="btn no-round-left col-11 border border-dark" onclick="d10change()">
-                            d10
+                        <button id="d10button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d10change()">
+                            <h5 class="no-margin col-3 text-left">d10</h5>
                         </button>
-                        <button id="d12button" type="button" class="btn no-round-left col-11 border border-dark" onclick="d12change()">
-                            d12
+                        <button id="d12button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d12change()">
+                            <h5 class="no-margin col-3 text-left">d12</h5>
                         </button>
-                        <button id="d20button" type="button" class="btn no-round-left col-11 border border-dark" onclick="d20change()">
-                            d20
+                        <button id="d20button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d20change()">
+                            <h5 class="no-margin col-3 text-left">d20</h5>
                         </button>
                     </div>
                 </div class="col-12">
             </div>
-            <div class="col bg-light row justify-content-center">
-                <div class="col-12 bg-dark row justify-content-center">
-                    <div class="col-9">
+            <div class="col bg-dark no-margin row justify-content-center">
+                <div class="col-12 row justify-content-center">
+                    <div class="col-9 row justify-content-center">
                         <img id="changing" src="images/d4.png" alt="1" class="col">
+                        <p id="number" class="position-absolute align-self-center">
+                            
+                        </p>
                     </div>
                 </div>
-                <button id="roll" class="col-6 btn btn-primary rounded" onclick="rollTheDice()">
+                <button id="roll" class="col-6 btn background rounded" onclick="rollTheDice()">
                     Roll
                 </button>
             </div>

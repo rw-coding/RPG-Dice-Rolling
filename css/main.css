@@ -1,4 +1,12 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap');
+
 /* Padding/Margin spacing */
+
+body {
+    font-size: 100%;
+}
 
 .no-padding {
     padding: 0;
@@ -8,6 +16,10 @@
     margin: 0;
 }
 
+#logoBox {
+    border-bottom-right-radius: 5% 10%;
+}
+
 #diceRoller {
     margin: 6% 2% 6% -2%;
     max-height: 100%;
@@ -15,40 +27,35 @@
 }
 
 #changing {
-    padding: 2vh 1vw 2vh 1vw;
+    padding: 6% 0;
     height: auto;
     width: 100%;
 }
 
-#roll {
-    margin-top: 5%;
+#number {
+    font-size: 7rem;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
-/* Buttons */
+#roll {
+    margin: 4.5% 0 8.5% 0;
+}
+
+/* Border */
 
 .no-round-left {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+    border-bottom-right-radius: 5% 40%;
+    border-top-right-radius: 5% 40%;
 }
 
-#d4button {
+/* Buttons */
+
+.background {
     background-color: darkolivegreen;
 }
-#d6button {
-    background-color: darkolivegreen;
-}
-#d8button {
-    background-color: darkolivegreen;
-}
-#d10button {
-    background-color: darkolivegreen;
-}
-#d12button {
-    background-color: darkolivegreen;
-}
-#d20button {
-    background-color: darkolivegreen;
-}
-.toggler {
-    background-color: darkgreen;
+
+.height {
+    padding: 3vh 0;
 }
