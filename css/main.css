@@ -9,7 +9,19 @@
 }
 
 #diceRoller {
-    padding: 2vh 1vw 2vh 0;
+    margin: 6% 2% 6% -2%;
+    max-height: 100%;
+    width: auto;
+}
+
+#changing {
+    padding: 2vh 1vw 2vh 1vw;
+    height: auto;
+    width: 100%;
+}
+
+#roll {
+    margin-top: 5%;
 }
 
 /* Buttons */

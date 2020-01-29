@@ -14,7 +14,7 @@
         <div class="container col-12 no-margin bg-dark row">
             <div class="col-5 bg-primary no-padding row">
                 <div class="col-12 bg-secondary">
-                    <img id="diceRoller" src="images/RPGDiceRolling.png" alt="RPG Dice-Rolling" class="col-12 no-padding">
+                    <img id="diceRoller" src="images/RPGDiceRolling.png" alt="RPG Dice-Rolling" class="col-12 align-self-center">
                 </div>
                 <div class="col row">
                     <div class="col no-padding">
@@ -39,13 +39,15 @@
                     </div>
                 </div class="col-12">
             </div>
-            <div class="col bg-light">
-                <div class="col-12 bg-dark">
-                    <img id="d4" alt="1">
+            <div class="col bg-light row justify-content-center">
+                <div class="col-12 bg-dark row justify-content-center">
+                    <div class="col-9">
+                        <img id="changing" src="images/d4.png" alt="1" class="col">
+                    </div>
                 </div>
-                <div id="roll" class="col-6 offset-3 bg-primary">
+                <button id="roll" class="col-6 btn btn-primary rounded" onclick="rollTheDice()">
                     Roll
-                </div>
+                </button>
             </div>
         </div>
     </body>
