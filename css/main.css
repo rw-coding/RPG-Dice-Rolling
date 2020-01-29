@@ -1,0 +1,42 @@
+/* Padding/Margin spacing */
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+#diceRoller {
+    padding: 2vh 1vw 2vh 0;
+}
+
+/* Buttons */
+
+.no-round-left {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#d4button {
+    background-color: darkolivegreen;
+}
+#d6button {
+    background-color: darkolivegreen;
+}
+#d8button {
+    background-color: darkolivegreen;
+}
+#d10button {
+    background-color: darkolivegreen;
+}
+#d12button {
+    background-color: darkolivegreen;
+}
+#d20button {
+    background-color: darkolivegreen;
+}
+.toggler {
+    background-color: darkgreen;
+}
