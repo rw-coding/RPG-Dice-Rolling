@@ -9,11 +9,19 @@
         border-bottom-left-radius: 5% 10%;
         border-bottom-right-radius: 5% 10%;
     }
+
+    #number {
+        font-size: 4.5rem;
+    }
 }
 
 @media screen and ( min-width: 992px ) {
     #logoBox {
         border-bottom-right-radius: 5% 10%;
+    }
+
+    #number {
+        font-size: 7rem;
     }
 }
 
@@ -44,7 +52,6 @@ body {
 }
 
 #number {
-    font-size: 7rem;
     font-family: 'Uncial Antiqua', cursive;
 }
 
