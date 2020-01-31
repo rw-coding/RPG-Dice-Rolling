@@ -2,6 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap');
 
+/* Sizes */
+
+@media screen and ( max-width: 991px ) {
+    #logoBox {
+        border-bottom-left-radius: 5% 10%;
+        border-bottom-right-radius: 5% 10%;
+    }
+}
+
+@media screen and ( min-width: 992px ) {
+    #logoBox {
+        border-bottom-right-radius: 5% 10%;
+    }
+}
+
 /* Padding/Margin spacing */
 
 body {
@@ -14,10 +29,6 @@ body {
 
 .no-margin {
     margin: 0;
-}
-
-#logoBox {
-    border-bottom-right-radius: 5% 10%;
 }
 
 #diceRoller {
@@ -43,11 +54,11 @@ body {
 
 /* Border */
 
-.no-round-left {
-    border-bottom-left-radius: 0;
+.no-round-top {
+    border-bottom-left-radius: 60% 40%;
     border-top-left-radius: 0;
-    border-bottom-right-radius: 5% 40%;
-    border-top-right-radius: 5% 40%;
+    border-bottom-right-radius: 60% 40%;
+    border-top-right-radius: 0;
 }
 
 /* Buttons */
@@ -57,5 +68,5 @@ body {
 }
 
 .height {
-    padding: 3vh 0;
+    padding: 2vh 0;
 }

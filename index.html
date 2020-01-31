@@ -10,31 +10,37 @@
         <title>RPG Dice-Rolling</title>
     </head>
 
-    <body>
+    <body class="bg-dark">
         <div class="container col-12 no-margin no-padding bg-dark row">
-            <div class="col-5 no-padding">
+            <div class="col-12 col-lg-5 no-padding">
                 <div id="logoBox" class="col-12 bg-secondary">
                     <img id="diceRoller" src="images/RPGDiceRolling.png" alt="RPG Dice-Rolling" class="col-12 align-self-center">
                 </div>
-                <div class="col row">
-                    <div class="col no-padding">
-                        <button id="d4button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d4change()">
-                            <h5 class="no-margin col-3 text-left">d4</h5>
+                <div class="col no-margin row justify-content-center justify-content-lg-start">
+                    <div class="col-11 col-lg no-padding row">
+                        <button id="d4button" type="button" class="btn background border border-secondary height no-round-top col-2" onclick="d4change(); reset();">
+                            <img class="col" src="images/d4.png">
+                            <h5 class="no-margin text-center">d4</h5>
                         </button>
-                        <button id="d6button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d6change()">
-                            <h5 class="no-margin col-3 text-left">d6</h5>
+                        <button id="d6button" type="button" class="btn background border border-secondary height no-round-top col-2" onclick="d6change(); reset();">
+                            <img class="col" src="images/d6.png">
+                            <h5 class="no-margin text-center">d6</h5>
                         </button>
-                        <button id="d8button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d8change()">
-                            <h5 class="no-margin col-3 text-left">d8</h5>
+                        <button id="d8button" type="button" class="btn background border border-secondary height no-round-top col-2" onclick="d8change(); reset();">
+                            <img class="col" src="images/d8.png">
+                            <h5 class="no-margin text-center">d8</h5>
                         </button>
-                        <button id="d10button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d10change()">
-                            <h5 class="no-margin col-3 text-left">d10</h5>
+                        <button id="d10button" type="button" class="btn background border border-secondary height no-round-top col-2" onclick="d10change(); reset();">
+                            <img class="col" src="images/d10.png">
+                            <h5 class="no-margin text-center">d10</h5>
                         </button>
-                        <button id="d12button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d12change()">
-                            <h5 class="no-margin col-3 text-left">d12</h5>
+                        <button id="d12button" type="button" class="btn background border border-secondary height no-round-top col-2" onclick="d12change(); reset();">
+                            <img class="col" src="images/d12.png">
+                            <h5 class="no-margin text-center">d12</h5>
                         </button>
-                        <button id="d20button" type="button" class="btn background border border-secondary height no-round-left col-11" onclick="d20change()">
-                            <h5 class="no-margin col-3 text-left">d20</h5>
+                        <button id="d20button" type="button" class="btn background border border-secondary height no-round-top col-2" onclick="d20change(); reset();">
+                            <img class="col" src="images/d20.png">
+                            <h5 class="no-margin text-center">d20</h5>
                         </button>
                     </div>
                 </div class="col-12">
@@ -42,13 +48,13 @@
             <div class="col bg-dark no-margin row justify-content-center">
                 <div class="col-12 row justify-content-center">
                     <div class="col-9 row justify-content-center">
-                        <img id="changing" src="images/d4.png" alt="1" class="col">
+                        <img id="changing" src="images/d4.png" alt="dice" class="col">
                         <p id="number" class="position-absolute align-self-center">
                             
                         </p>
                     </div>
                 </div>
-                <button id="roll" class="col-6 btn background rounded" onclick="rollTheDice()">
+                <button id="roll" class="col-6 border border-secondary btn background rounded" onclick="rollTheDice()">
                     Roll
                 </button>
             </div>
